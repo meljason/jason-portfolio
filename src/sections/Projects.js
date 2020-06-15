@@ -112,7 +112,7 @@ const Project = ({
   publishedDate,
   logo,
 }) => (
-  <Card p={0}>
+  <Card p={0} marginRight="15px">
     <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
         <span>
@@ -201,7 +201,7 @@ const Projects = () => (
         }
       `}
       render={({ contentfulAbout }) => (
-        <CardContainer minWidth="350px">
+        <CardContainer minWidth="350px"  marginRight="15px">
           {contentfulAbout.projects.map((p, i) => (
             <Fade bottom delay={i * 200} key={p.id}>
               <Project {...p} />
